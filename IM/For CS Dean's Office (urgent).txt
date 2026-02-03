@@ -1,0 +1,13 @@
+For CS Dean's Office (urgent)
+- Request for the number of enrollees and graduates A.Y 2019-2020, 2023-2025
+- Enrollees: 2019-2020
+- Graduates: 2023, 2024, 2025
+- Compute the attrition rate 
+- Get the attrition rate of 2019-2020, 2020-2021,2021-2022 Per program ang analysis
+- Predict ang attrition rate for the next 5 years using logical regression 
+- The proportion of attrition rate is proportion to the misalignment of student in the program
+
+TO DO ( Minor)
+- Conduct a survey to the offices in CS, specifically Guidance Office.  
+- Construct questionnaire for the interview 
+

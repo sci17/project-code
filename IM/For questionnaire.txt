@@ -1,0 +1,41 @@
+For questionnaire: 
+a) adapt to the existing instrument of a study
+b) checked with the guidance and social worker
+c) components of a questionnaire: 
+- title
+- objective
+- proof of validation
+- how to treat data 
+- state the participation as voluntary 
+- estimate time for answering
+- printed/google form
+- message for participant
+- significance of the input
+- ginamit or inadapt sa research 
+- assurance regarding the participants privacy 
+- info about the researchers 
+- checkbox for the agreement
+d) specify the instruction 
+
+*identify the correlation of the variables from the graduates data + admission data and to determine their program on college. did they graduated on time (laman ng dataset)
+* conduct a regression analysis (linear or multi) - ipadaan sa statistician 
+* need the names of the participants 
+* get analytics that can be used for testing 
+
+- graduated
+- drop
+- shift
+- transferred 
+
+- statistical tool (smart pls)
+OBJECTIVES 
+1. determine the "factors"
+2. "identify an appropriate machine learning model"
+3. "train" - "test" - "fine tune" 
+-obj2 will be ensemble to provide a higher accuracy in predicting the success of students based factors.   
+
+STEPS TO BE TAKEN: 
+1) 
+
+
+

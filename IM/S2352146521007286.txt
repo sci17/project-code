@@ -1,0 +1,11 @@
+Alexey Terentyev, Maria Karelina, Vladimir Egorov, Andrey Andreev, Kazem Reza Kashyzadeh,
+Model for determining optimal routes in complex transport systems,
+Transportation Research Procedia,
+Volume 57,
+2021,
+Pages 679-687,
+ISSN 2352-1465,
+https://doi.org/10.1016/j.trpro.2021.09.100.
+(https://www.sciencedirect.com/science/article/pii/S2352146521007286)
+Abstract: The paper analyzes standard algorithms and software based on them to determine the optimal routes for cargo transfer in road transport systems. It was found that one of the urgent issues related to routing is to find a solution to the optimization problem by several efficiency criteria, including the reduction of computational procedures. As a result of the study, we propose an original solution to this problem.
+Keywords: routing; road transport system; optimization algorithm; multi-criteria problem; software

@@ -1,0 +1,153 @@
+
+Jhonny Mahinay@aNXiety MINGW64 ~ (main)
+$ cd Desktop/AGUSTIN/
+
+Jhonny Mahinay@aNXiety MINGW64 ~/Desktop/AGUSTIN (main)
+$ mkdir MyQouteBook
+
+Jhonny Mahinay@aNXiety MINGW64 ~/Desktop/AGUSTIN (main)
+$ cd MyQouteBook
+
+Jhonny Mahinay@aNXiety MINGW64 ~/Desktop/AGUSTIN/MyQouteBook (main)
+$ echo "happy life" >> happiness.txt
+
+Jhonny Mahinay@aNXiety MINGW64 ~/Desktop/AGUSTIN/MyQouteBook (main)
+$ git init
+Initialized empty Git repository in C:/Users/Jhonny Mahinay/Desktop/AGUSTIN/MyQouteBook/.git/
+
+Jhonny Mahinay@aNXiety MINGW64 ~/Desktop/AGUSTIN/MyQouteBook (master)
+$ git add happiness.txt
+warning: in the working copy of 'happiness.txt', LF will be replaced by CRLF the next time Git touches it
+
+Jhonny Mahinay@aNXiety MINGW64 ~/Desktop/AGUSTIN/MyQouteBook (master)
+$ git commit -m "first commit"
+[master (root-commit) 53a2dd8] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 happiness.txt
+
+Jhonny Mahinay@aNXiety MINGW64 ~/Desktop/AGUSTIN/MyQouteBook (master)
+$ echo "tawa ng tawa si jhonny at aneza" >> humor.txt
+
+Jhonny Mahinay@aNXiety MINGW64 ~/Desktop/AGUSTIN/MyQouteBook (master)
+$ git add humor.txt
+warning: in the working copy of 'humor.txt', LF will be replaced by CRLF the next time Git touches it
+
+Jhonny Mahinay@aNXiety MINGW64 ~/Desktop/AGUSTIN/MyQouteBook (master)
+$ git commit -m "second commit"
+[master ca3c558] second commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 humor.txt
+
+Jhonny Mahinay@aNXiety MINGW64 ~/Desktop/AGUSTIN/MyQouteBook (master)
+$ echo "good life" >> happines.txt
+
+Jhonny Mahinay@aNXiety MINGW64 ~/Desktop/AGUSTIN/MyQouteBook (master)
+$ echo "hindi na sila tumatawa" >> humor.txt
+
+Jhonny Mahinay@aNXiety MINGW64 ~/Desktop/AGUSTIN/MyQouteBook (master)
+$ git add happiness.txt humor.txt
+warning: in the working copy of 'humor.txt', LF will be replaced by CRLF the next time Git touches it
+
+Jhonny Mahinay@aNXiety MINGW64 ~/Desktop/AGUSTIN/MyQouteBook (master)
+$ git commit -m "update on happiness and humor txt file"
+[master 9eebfe9] update on happiness and humor txt file
+ 1 file changed, 1 insertion(+)
+
+Jhonny Mahinay@aNXiety MINGW64 ~/Desktop/AGUSTIN/MyQouteBook (master)
+$ git revert HEAD
+[master 2ac80c8] Revert "update on happiness and humor txt file"
+ 1 file changed, 1 deletion(-)
+
+Jhonny Mahinay@aNXiety MINGW64 ~/Desktop/AGUSTIN/MyQouteBook (master)
+$ git revert -n HEAD
+
+Jhonny Mahinay@aNXiety MINGW64 ~/Desktop/AGUSTIN/MyQouteBook (master|REVERTING)
+$ git commit -m "revert the previous revert"
+[master a29f028] revert the previous revert
+ 1 file changed, 1 insertion(+)
+
+Jhonny Mahinay@aNXiety MINGW64 ~/Desktop/AGUSTIN/MyQouteBook (master)
+$ git reset --hard HEAD~2
+HEAD is now at 9eebfe9 update on happiness and humor txt file
+
+Jhonny Mahinay@aNXiety MINGW64 ~/Desktop/AGUSTIN/MyQouteBook (master)
+$ git chechout -b qoutes
+git: 'chechout' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+
+Jhonny Mahinay@aNXiety MINGW64 ~/Desktop/AGUSTIN/MyQouteBook (master)
+$ git checkout -b qoutes
+Switched to a new branch 'qoutes'
+
+Jhonny Mahinay@aNXiety MINGW64 ~/Desktop/AGUSTIN/MyQouteBook (qoutes)
+$ echo "kaya mo yan" >> motivation_qoutes.txt
+
+Jhonny Mahinay@aNXiety MINGW64 ~/Desktop/AGUSTIN/MyQouteBook (qoutes)
+$ git add motivations_qoutes.txt
+fatal: pathspec 'motivations_qoutes.txt' did not match any files
+
+Jhonny Mahinay@aNXiety MINGW64 ~/Desktop/AGUSTIN/MyQouteBook (qoutes)
+$ git add motivation_qoutes.txt
+warning: in the working copy of 'motivation_qoutes.txt', LF will be replaced by CRLF the next time Git touches it
+
+Jhonny Mahinay@aNXiety MINGW64 ~/Desktop/AGUSTIN/MyQouteBook (qoutes)
+$ git commit -m "add motivational qoutes"
+[qoutes 7ea15b6] add motivational qoutes
+ 1 file changed, 1 insertion(+)
+ create mode 100644 motivation_qoutes.txt
+
+Jhonny Mahinay@aNXiety MINGW64 ~/Desktop/AGUSTIN/MyQouteBook (qoutes)
+$ git checkout master
+Switched to branch 'master'
+
+Jhonny Mahinay@aNXiety MINGW64 ~/Desktop/AGUSTIN/MyQouteBook (master)
+$ git merge qoutes
+Updating 9eebfe9..7ea15b6
+Fast-forward
+ motivation_qoutes.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 motivation_qoutes.txt
+
+Jhonny Mahinay@aNXiety MINGW64 ~/Desktop/AGUSTIN/MyQouteBook (master)
+$ git log --oneline
+7ea15b6 (HEAD -> master, qoutes) add motivational qoutes
+9eebfe9 update on happiness and humor txt file
+ca3c558 second commit
+53a2dd8 first commit
+
+Jhonny Mahinay@aNXiety MINGW64 ~/Desktop/AGUSTIN/MyQouteBook (master)
+$ git branch -d qoutes
+Deleted branch qoutes (was 7ea15b6).
+
+Jhonny Mahinay@aNXiety MINGW64 ~/Desktop/AGUSTIN/MyQouteBook (master)
+$ git remote add origin https://github.com/anxiety16/AGUSTIN_VCS.git
+
+Jhonny Mahinay@aNXiety MINGW64 ~/Desktop/AGUSTIN/MyQouteBook (master)
+$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/anxiety16/AGUSTIN_VCS.git'
+
+Jhonny Mahinay@aNXiety MINGW64 ~/Desktop/AGUSTIN/MyQouteBook (master)
+$ git branch
+* master
+
+Jhonny Mahinay@aNXiety MINGW64 ~/Desktop/AGUSTIN/MyQouteBook (master)
+$ git push -u origin master
+Enumerating objects: 12, done.
+Counting objects: 100% (12/12), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (12/12), 1.04 KiB | 1.04 MiB/s, done.
+Total 12 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/anxiety16/AGUSTIN_VCS.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+Jhonny Mahinay@aNXiety MINGW64 ~/Desktop/AGUSTIN/MyQouteBook (master)
+$ ^C
+
+Jhonny Mahinay@aNXiety MINGW64 ~/Desktop/AGUSTIN/MyQouteBook (master)
+$
